@@ -2,7 +2,7 @@
 
 ## Requirements
 
-There are two parts to this test. First part is to the ui test this has been setup to use testcafe and you will find the tests in `/ui-tests/login.js`. Second part is api tests they are found `/api-tests/login.test.js`
+There are two parts to this test. First part is to do the ui test this has been setup to use testcafe and you will find the tests in `/ui-tests/login.js`. Second part is api tests they are found `/api-tests/login.test.js`
 
 For both tests you are required to fill in the all the tests that are defined in the file. You may add more tests if you think they are required.
 
@@ -31,7 +31,7 @@ They have already been setup for you.
 
 ## UI Tesing
 
-The website can be found at [https://sprinkle-burn.glitch.me/]()
+The website can be found at [https://sprinkle-burn.glitch.me/](https://sprinkle-burn.glitch.me/)
 
 ### Running API tests
 
