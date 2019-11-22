@@ -11,6 +11,7 @@ test("/api/login with incorrect credentials", async () => {
   });
 
   expect(response.statusCode).toEqual(401);
+  expect(response.body).toEqual({"errors": [{"title": "Credentials are incorrect"}]});
 
 });
 
@@ -23,6 +24,9 @@ test("/api/login with correct credentials", async () => {
   });
 
   expect(response.statusCode).toEqual(200);
+  expect(response.body).toEqual({"data":{"username":"Dr I Test"}});
+  // failed on expected  -> Object with all headers, not just Content-type
+ // expect(response.headers).toEqual({"Content-Type": "application/json"});
 
 });
 
