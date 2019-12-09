@@ -5,8 +5,8 @@ fixture ('Login Page').page('https://sprinkle-burn.glitch.me/');
 
 test("Can not login with correct credentials", async t => {
   
-        const emailBox = Selector('input').withAttribute('type', 'email');
-        const passwordBox = Selector('input').withAttribute('type', 'password');
+        const emailBox = Selector(("input[type='email']"));
+        const passwordBox = Selector(("input[type='password']"));
         const loginBtn = Selector('button').withText('Login');
 
           await t
@@ -20,8 +20,8 @@ test("Can not login with correct credentials", async t => {
 
 test("Can login with correct credentials", async t => {
       
-        const emailBox = Selector('input').withAttribute('type', 'email');
-        const passwordBox = Selector('input').withAttribute('type', 'password');
+        const emailBox = Selector(("input[type='email']"));
+        const passwordBox = Selector(("input[type='password']"));
         const loginBtn = Selector('button').withText('Login');
         const welcome = Selector('article').withText('Welcome Dr I Test');
 
