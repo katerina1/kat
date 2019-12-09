@@ -25,8 +25,8 @@ test("/api/login with correct credentials", async () => {
   });
 
   expect(response.statusCode).toEqual(200);
-  expect(response.body.username).toEqual("Dr I Test");
-  
+  expect(response.body.data.username).toEqual("Dr I Test");
+
   console.log(response.headers.get('Content-Type'));
 
 });
